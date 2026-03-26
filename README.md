@@ -17,3 +17,7 @@ neu run
 ## Built with
 - Neutralinojs v6.5.0
 - Plain HTML/CSS/JS
+
+
+## Screenshot 
+<img width="846" height="469" alt="image" src="https://github.com/user-attachments/assets/320f3d41-4dd6-4d3b-8320-5a6a101a75e9" />
