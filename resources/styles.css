@@ -1,0 +1,87 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Cascadia Code', 'Consolas', 'Courier New', monospace;
+    background: #0d0d0d;
+    color: #d4d4d4;
+    padding: 32px;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 560px;
+}
+
+header {
+    margin-bottom: 28px;
+    font-size: 13px;
+}
+
+.prompt { color: #4ec94e; }
+.sep    { color: #888; }
+.path   { color: #6ab0f5; }
+.cmd    { color: #d4d4d4; margin-left: 6px; }
+
+.info-table {
+    border-left: 2px solid #2a2a2a;
+    margin-bottom: 28px;
+}
+
+.row {
+    display: flex;
+    align-items: baseline;
+    padding: 6px 0 6px 14px;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.row:last-child { border-bottom: none; }
+
+.label {
+    width: 72px;
+    font-size: 11px;
+    color: #666;
+    letter-spacing: 0.08em;
+    flex-shrink: 0;
+}
+
+.value {
+    color: #e8e8e8;
+    font-size: 13px;
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+button {
+    background: none;
+    color: #4ec94e;
+    border: 1px solid #2e2e2e;
+    padding: 6px 14px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 13px;
+    transition: border-color 0.15s, color 0.15s;
+}
+
+button:hover {
+    border-color: #4ec94e;
+    color: #7ddf7d;
+}
+
+button:active {
+    background: #1a2e1a;
+}
+
+.output {
+    border-left: 2px solid #2a2a2a;
+    padding: 10px 14px;
+    font-family: inherit;
+    font-size: 13px;
+    color: #888;
+    white-space: pre-wrap;
+    min-height: 40px;
+    line-height: 1.5;
+}

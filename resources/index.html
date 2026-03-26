@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>SysBoard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span class="prompt">root@sysboard</span><span class="sep">:</span><span class="path">~</span><span class="sep">$</span>
+            <span class="cmd">sysinfo --watch</span>
+        </header>
+
+        <div class="info-table">
+            <div class="row">
+                <span class="label">OS</span>
+                <span class="value" id="os-info">—</span>
+            </div>
+            <div class="row">
+                <span class="label">KERNEL</span>
+                <span class="value" id="kernel-info">—</span>
+            </div>
+            <div class="row">
+                <span class="label">ARCH</span>
+                <span class="value" id="cpu-info">—</span>
+            </div>
+            <div class="row">
+                <span class="label">MEMORY</span>
+                <span class="value" id="mem-info">—</span>
+            </div>
+        </div>
+
+        <div class="actions">
+            <button id="btn-folder">open folder</button>
+            <button id="btn-notify">notify</button>
+            <button id="btn-cmd">run echo</button>
+        </div>
+
+        <pre class="output" id="output">_</pre>
+    </div>
+    <script src="js/neutralino.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
